@@ -24,10 +24,6 @@ function App() {
   }
 
   useEffect(() => {
-    alert("Changed")
-  }, [toAmount])
-
-  useEffect(() => {
     fetch(BASE_URL)
       .then(res => res.json())
       .then(data => {
